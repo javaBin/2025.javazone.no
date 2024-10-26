@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-
+import styles from './header.module.css';
 import Link from 'next/link'
 import Image from "next/image";
 
@@ -10,7 +10,7 @@ export function Header() {
   const [burger, setBurger] = useState(false);
 
   return (
-    <nav className="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav className={`${styles.navbar} ${styles.isDark} ${styles.isFixedTop}`} role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="/">
           <Image src="/logo-sharp.svg" height={48} width={48}  alt="logo"/>
@@ -18,7 +18,7 @@ export function Header() {
 
         <a role="button"
            onClick={() => setBurger(!burger)}
-           className={burger ? "navbar-burger is-active" : "navbar-burger"}
+           className={burger ? `${styles.navbarBurger} ${styles.isActive}` : styles.navbarBurger}
            aria-label="menu" aria-expanded="false"
            data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
@@ -27,20 +27,20 @@ export function Header() {
         </a>
       </div>
 
-      <div id="navbarBasicExample" className={burger ? "navbar-menu is-active" : "navbar-menu"}>
-        <div className="navbar-start">
-          <Link className="navbar-item" href="/">JavaZone 2023 - JavaBin</Link>
+      <div id="navbarBasicExample" className={burger ? `${styles.navbarMenu} ${styles.isActive}` : styles.navbarMenu}>
+        <div className={styles.navbarStart}>
+          <Link className={styles.navbarItem} href="/">JavaZone 2023 - JavaBin</Link>
 
-          <Link className="navbar-item" href="/partners">Partners</Link>
+          <Link className={styles.navbarItem} href="/partners">Partners</Link>
 
-          <Link className="navbar-item" href="/speakers">Speakers</Link>
+          <Link className={styles.navbarItem} href="/speakers">Speakers</Link>
         </div>
 
-        <div className="navbar-end">
-          <div className="navbar-item">
-            <div className="buttons">
+        <div className={styles.navbarEnd}>
+          <div className={styles.navbarItem}>
+            <div className={styles.buttons}>
               <strong>
-                <Link className="button is-primary" href="/speakers">Submit your talk!</Link>
+                <Link className={`${styles.button} ${styles.isPrimary}`} href="/speakers">Submit your talk!</Link>
               </strong>
             </div>
           </div>

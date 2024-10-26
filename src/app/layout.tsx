@@ -1,7 +1,11 @@
+import { ReactNode } from 'react'
 import type { Metadata } from "next";
+import { Footer } from './footer/footer'
+import { Header } from './header/header'
 import localFont from "next/font/local";
-import "./globals.css";
+import styles from "./layout.module.css";
 
+// TODO: Keeping these variables for now as inspiration, but they are not used in the layout
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -21,13 +25,43 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+    <head>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+      <meta name="theme-color" content="#fff" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@JavaZone" />
+      <meta name="twitter:image:alt" content="JavaZone logo" />
+      <meta
+        name="description"
+        content="JavaZone - The biggest community-driven Java conference."
+      />
+      <meta property="og:title" content="JavaZone 2023" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://2023.javazone.no" />
+      <meta property="og:description" content="The biggest community-driven Java conference." />
+      <meta property="og:site_name" content="javazone.no" />
+      <title>JavaZone 2023</title>
+    </head>
+    <body className={styles.hasNavbarFixedTop}>
+
+    <Header />
+    <div className={`${styles.hero} ${styles.isFullheight}`}>
+      <div className={styles.heroBody}>
+        <div className={`${styles.container} ${styles.isMaxDesktop}`}>
+          {children}
+        </div>
+      </div>
+      <div className={styles.heroFoot}>
+        <Footer />
+      </div>
+    </div>
+
+    </body>
     </html>
   );
 }

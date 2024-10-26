@@ -1,0 +1,86 @@
+.navbar {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dbdbdb;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 3.25rem;
+  position: relative;
+  z-index: 30;
+}
+
+.is-dark {
+  background-color: #363636 !important;
+  color: #fff !important;
+}
+
+.is-fixed-top {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+}
+
+.navbar-brand {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  min-height: 3.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-item {
+  align-items: center;
+  display: flex;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+}
+
+.navbar-burger {
+  cursor: pointer;
+  display: block;
+  height: 3.25rem;
+  position: relative;
+  width: 3.25rem;
+}
+.navbar-burger span {
+  background-color: #4a4a4a;
+  display: block;
+  height: 2px;
+  margin: 4px 0;
+  width: 1.5rem;
+}
+
+.is-active {
+  display: block !important;
+}
+
+.navbar-menu {
+  display: none;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.navbar-start {
+  align-items: center;
+  display: flex;
+}
+
+.navbar-end {
+  align-items: center;
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.is-primary {
+  background-color: #00d1b2 !important;
+  border-color: transparent;
+  color: #fff;
+}
