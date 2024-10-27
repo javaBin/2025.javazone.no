@@ -1,0 +1,57 @@
+.main {
+  padding: 2rem;
+}
+
+.content {
+  margin-bottom: 2rem;
+}
+
+.panel {
+  border: 1px solid #dbdbdb;
+}
+
+.panelHeading {
+  font-size: 1.5rem;
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+}
+
+.panelList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hasTextWeightBold {
+  font-weight: bold;
+}
+
+.isInfo {
+  background-color: #209cee;
+  color: white;
+}
+
+.is-normal {
+  font-size: 1rem;
+}
+
+.is-info {
+  color: #209cee;
+  background-color: #209cee;
+  border-color: #209cee;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}

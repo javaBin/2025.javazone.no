@@ -1,0 +1,22 @@
+.main {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.content {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.isNormal {
+  font-size: 1rem;
+}
+
+.block {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
