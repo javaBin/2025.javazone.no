@@ -29,7 +29,7 @@ export function Header() {
 
       <div id="navbarBasicExample" className={burger ? `${styles.navbarMenu} ${styles.isActive}` : styles.navbarMenu}>
         <div className={styles.navbarStart}>
-          <Link className={styles.navbarItem} href="/">JavaZone 2023 - JavaBin</Link>
+          <Link className={styles.navbarItem} href="/">JavaZone 2025 - JavaBin</Link>
 
           <Link className={styles.navbarItem} href="/partners">Partners</Link>
 

@@ -26,7 +26,7 @@ export default function SpeakersPage() {
         <section className={styles.content}>
           <h2>About JavaZone</h2>
           <p>
-            JavaZone 2023 will be the 21st physical JavaZone conference and will consist of a day of pre-conference workshop, followed by two days of lightning talks and presentations in September.
+            JavaZone 2025 will be the 21st physical JavaZone conference and will consist of a day of pre-conference workshop, followed by two days of lightning talks and presentations in September.
           </p>
           <p>
             JavaZone is typically sold out, with more than 3200 attendees enjoying well over 100 sessions.
@@ -48,7 +48,7 @@ export default function SpeakersPage() {
             Over the last decade JavaZone has grown to become one of the most important Java events in Europe! You can see for yourself – over 1500 videos from previous years talks are available for free at <a href='https://vimeo.com/javazone'>Vimeo</a>, and the <a href='https://2022.javazone.no/program'>full program from JavaZone 2022</a> is also available.
           </p>
           <p>
-            We can brag as much as we want, but JavaZone would be nothing without all the great speakers! That's why we need your help to make sure that JavaZone 2023 will be at least as awesome as the earlier events. If you think you have something interesting to share, please submit your talk or workshop.
+            We can brag as much as we want, but JavaZone would be nothing without all the great speakers! That's why we need your help to make sure that JavaZone 2025 will be at least as awesome as the earlier events. If you think you have something interesting to share, please submit your talk or workshop.
           </p>
           <p>
             JavaZone is committed to diversity, and we are especially interested in quality submissions from groups that are under-represented in tech.
@@ -141,7 +141,7 @@ export default function SpeakersPage() {
           </p>
         </section>
 
-        <h2>We hope to see you at JavaZone 2023 - please feel free to spread the word to your local community!</h2>
+        <h2>We hope to see you at JavaZone 2025 - please feel free to spread the word to your local community!</h2>
         <p>
           Best regards,<br />the JavaZone Program Committee
         </p>
