@@ -1,4 +1,8 @@
-.navbar.is-fixed-top {
+.hasNavbarFixedTop {
+  padding-top: 3.25rem !important;
+}
+
+.navbar.isFixedTop {
   position: fixed;
   top: 0;
   left: 0;
@@ -7,19 +11,19 @@
 }
 
 .hero {
-  min-height: 72.5vh;
   background-color: #f5f5f5;
   color: #4a4a4a;
   padding: 3rem 1.5rem;
 }
 
-.hero.is-fullheight {
+.hero.isFullHeight {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.hero-body {
+.heroBody {
   flex-grow: 1;
   padding: 3rem 1.5rem;
   display: flex;
@@ -51,11 +55,11 @@
   }
 }
 
-.is-max-desktop {
+.isMaxDesktop {
   max-width: 960px !important;
 }
 
-.hero-foot {
+.heroFoot {
   flex-shrink: 0;
   padding: 1.5rem 1.5rem;
 }

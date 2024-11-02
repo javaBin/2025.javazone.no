@@ -1,3 +1,4 @@
+import '../styles/globals.css'
 import { ReactNode } from 'react'
 import type { Metadata } from "next";
 import { Footer } from './footer/footer'
@@ -40,26 +41,27 @@ export default function RootLayout({
         name="description"
         content="JavaZone - The biggest community-driven Java conference."
       />
-      <meta property="og:title" content="JavaZone 2025" />
+      <meta property="og:title" content="JavaZone 2023" />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://2025.javazone.no" />
+      <meta property="og:url" content="https://2023.javazone.no" />
       <meta property="og:description" content="The biggest community-driven Java conference." />
       <meta property="og:site_name" content="javazone.no" />
-      <title>JavaZone 2025</title>
+      <title>JavaZone 2023</title>
     </head>
-    <body style={{margin: 0}}>
+    <body className={styles.hasNavbarFixedTop}>
 
-    <Header/>
-    <div className={`${styles.hero} ${styles.isFullheight}`}>
+    <Header />
+    <div className={`${styles.hero} ${styles.isFullHeight}`}>
       <div className={styles.heroBody}>
         <div className={`${styles.container} ${styles.isMaxDesktop}`}>
           {children}
         </div>
       </div>
+      <div className={styles.heroFoot}>
+        <Footer />
+      </div>
     </div>
-    <div className={styles.heroFoot}>
-      <Footer/>
-    </div>
+
     </body>
     </html>
   );

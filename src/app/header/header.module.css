@@ -10,12 +10,12 @@
   z-index: 30;
 }
 
-.is-dark {
+.isDark {
   background-color: #363636 !important;
   color: #fff !important;
 }
 
-.is-fixed-top {
+.isFixedTop {
   position: fixed !important;
   top: 0;
   left: 0;
@@ -23,7 +23,7 @@
   z-index: 30;
 }
 
-.navbar-brand {
+.navbarBrand {
   align-items: center;
   display: flex;
   flex-shrink: 0;
@@ -32,22 +32,21 @@
   padding-right: 1rem;
 }
 
-.navbar-item {
+.navbarItem {
   align-items: center;
   display: flex;
   padding: 0.5rem 0.75rem;
   position: relative;
 }
 
-.navbar-burger {
+.navbarBurger {
   cursor: pointer;
   display: block;
   height: 3.25rem;
   position: relative;
   width: 3.25rem;
 }
-
-.navbar-burger span {
+.navbarBurger span {
   background-color: #4a4a4a;
   display: block;
   height: 2px;
@@ -55,17 +54,22 @@
   width: 1.5rem;
 }
 
-.navbar-menu {
-  display: flex;
+.isActive {
+  display: block !important;
+}
+
+.navbarMenu {
+  display: none;
+  flex-grow: 1;
   justify-content: space-between;
 }
 
-.navbar-start {
+.navbarStart {
   align-items: center;
   display: flex;
 }
 
-.navbar-end {
+.navbarEnd {
   align-items: center;
   display: flex;
 }
@@ -75,7 +79,7 @@
   align-items: center;
 }
 
-.is-primary {
+.isPrimary {
   background-color: #00d1b2 !important;
   border-color: transparent;
   color: #fff;

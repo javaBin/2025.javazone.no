@@ -9,11 +9,11 @@
   flex-wrap: wrap;
 }
 
-.level-item {
+.levelItem {
   margin: 0 1rem;
 }
 
-.has-text-centered {
+.hasTextCentered {
   text-align: center;
 }
 

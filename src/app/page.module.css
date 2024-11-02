@@ -169,7 +169,7 @@ a.secondary {
 }
 */
 
-.has-text-centered {
+.hasTextCentered {
   text-align: center !important;
 }
 
@@ -185,6 +185,6 @@ a.secondary {
   line-height: 1.125;
 }
 
-.has-text-weight-bold {
+.hasTextWeightBold {
   font-weight: 700 !important;
 }

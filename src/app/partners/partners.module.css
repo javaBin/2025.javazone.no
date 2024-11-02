@@ -30,28 +30,28 @@
   color: white;
 }
 
-.is-normal {
+.isNormal {
   font-size: 1rem;
 }
 
-.is-info {
+.isInfo {
   color: #209cee;
   background-color: #209cee;
   border-color: #209cee;
 }
 
-.mt-auto {
+.mtAuto {
   margin-top: auto;
 }
 
-.p-0 {
+.p0 {
   padding: 0;
 }
 
-.ml-5 {
+.ml5 {
   margin-left: 1.25rem;
 }
 
-.pb-5 {
+.pb5 {
   padding-bottom: 1.25rem;
 }
