@@ -47,20 +47,19 @@ export default function RootLayout({
       <meta property="og:site_name" content="javazone.no" />
       <title>JavaZone 2025</title>
     </head>
-    <body className={styles.hasNavbarFixedTop}>
+    <body style={{margin: 0}}>
 
-    <Header />
+    <Header/>
     <div className={`${styles.hero} ${styles.isFullheight}`}>
       <div className={styles.heroBody}>
         <div className={`${styles.container} ${styles.isMaxDesktop}`}>
           {children}
         </div>
       </div>
-      <div className={styles.heroFoot}>
-        <Footer />
-      </div>
     </div>
-
+    <div className={styles.heroFoot}>
+      <Footer/>
+    </div>
     </body>
     </html>
   );

@@ -16,7 +16,7 @@ export function Header() {
           <Image src="/logo-sharp.svg" height={48} width={48}  alt="logo"/>
         </a>
 
-        <a role="button"
+   {/*     <a role="button"
            onClick={() => setBurger(!burger)}
            className={burger ? `${styles.navbarBurger} ${styles.isActive}` : styles.navbarBurger}
            aria-label="menu" aria-expanded="false"
@@ -24,11 +24,11 @@ export function Header() {
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a>
+        </a>*/}
       </div>
 
-      <div id="navbarBasicExample" className={burger ? `${styles.navbarMenu} ${styles.isActive}` : styles.navbarMenu}>
-        <div className={styles.navbarStart}>
+      <div id="navbarBasicExample" style={{display: 'flex', alignItems: 'center', gap: 30}}>
+        <div style={{display: "flex", gap: 20}}>
           <Link className={styles.navbarItem} href="/">JavaZone 2025 - JavaBin</Link>
 
           <Link className={styles.navbarItem} href="/partners">Partners</Link>
