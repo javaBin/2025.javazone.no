@@ -35,7 +35,7 @@
 
 .container {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 5vh auto;
 }
 
 .columns {
@@ -43,6 +43,11 @@
 }
 
 .isCentered {
+  justify-content: center;
+}
+
+.isJustifyContentCenter {
+  display: flex;
   justify-content: center;
 }
 

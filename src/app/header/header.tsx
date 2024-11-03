@@ -11,8 +11,8 @@ export function Header() {
 
   return (
     <nav className={`${styles.navbar} ${styles.isDark} ${styles.isFixedTop}`} role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
-        <a className="navbar-item" href="/">
+      <div className={styles.navbarBrand}>
+        <a className={styles.navbarItem} href="/">
           <Image src="/logo-sharp.svg" height={48} width={48}  alt="logo"/>
         </a>
 
@@ -27,7 +27,7 @@ export function Header() {
         </a>
       </div>
 
-      <div id="navbarBasicExample" className={burger ? `${styles.navbarMenu} ${styles.isActive}` : styles.navbarMenu}>
+      <div id="navbarBasicExample" className={burger ? `${styles.navbarMenu} ${styles.isActiveNavBarMenu}` : styles.navbarMenu}>
         <div className={styles.navbarStart}>
           <Link className={styles.navbarItem} href="/">JavaZone 2023 - JavaBin</Link>
 

@@ -33,6 +33,7 @@
 }
 
 .navbarItem {
+  color: #bfc2c6;
   align-items: center;
   display: flex;
   padding: 0.5rem 0.75rem;
@@ -42,12 +43,13 @@
 .navbarBurger {
   cursor: pointer;
   display: block;
-  height: 3.25rem;
+  align-content: center;
+  height: 4rem;
   position: relative;
   width: 3.25rem;
 }
 .navbarBurger span {
-  background-color: #4a4a4a;
+  background-color: #ffffff;
   display: block;
   height: 2px;
   margin: 4px 0;
@@ -62,6 +64,14 @@
   display: none;
   flex-grow: 1;
   justify-content: space-between;
+}
+
+.isActive {
+  display: block !important;
+}
+
+.isActiveNavBarMenu {
+  display: flex !important;
 }
 
 .navbarStart {
@@ -83,4 +93,10 @@
   background-color: #00d1b2 !important;
   border-color: transparent;
   color: #fff;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }

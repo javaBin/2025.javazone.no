@@ -50,18 +50,17 @@ export default function RootLayout({
     </head>
     <body className={styles.hasNavbarFixedTop}>
 
-    <Header />
+    <Header/>
     <div className={`${styles.hero} ${styles.isFullHeight}`}>
       <div className={styles.heroBody}>
         <div className={`${styles.container} ${styles.isMaxDesktop}`}>
           {children}
         </div>
       </div>
-      <div className={styles.heroFoot}>
-        <Footer />
-      </div>
     </div>
-
+    <div className={styles.heroFoot}>
+      <Footer/>
+    </div>
     </body>
     </html>
   );
