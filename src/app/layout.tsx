@@ -41,12 +41,12 @@ export default function RootLayout({
         name="description"
         content="JavaZone - The biggest community-driven Java conference."
       />
-      <meta property="og:title" content="JavaZone 2023" />
+      <meta property="og:title" content="JavaZone 2025" />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://2023.javazone.no" />
+      <meta property="og:url" content="https://2025.javazone.no" />
       <meta property="og:description" content="The biggest community-driven Java conference." />
       <meta property="og:site_name" content="javazone.no" />
-      <title>JavaZone 2023</title>
+      <title>JavaZone 2025</title>
     </head>
     <body className={styles.hasNavbarFixedTop}>
 

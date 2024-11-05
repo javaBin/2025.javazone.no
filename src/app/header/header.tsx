@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function Header() {
 
-  const [burger, setBurger] = useState(false);
+  const [burger, setBurger] = useState(true);
 
   return (
     <nav className={`${styles.navbar} ${styles.isDark} ${styles.isFixedTop}`} role="navigation" aria-label="main navigation">
@@ -29,7 +29,7 @@ export function Header() {
 
       <div id="navbarBasicExample" className={burger ? `${styles.navbarMenu} ${styles.isActiveNavBarMenu}` : styles.navbarMenu}>
         <div className={styles.navbarStart}>
-          <Link className={styles.navbarItem} href="/">JavaZone 2023 - JavaBin</Link>
+          <Link className={styles.navbarItem} href="/">JavaZone 2025 - JavaBin</Link>
 
           <Link className={styles.navbarItem} href="/partners">Partners</Link>
 
